@@ -17,7 +17,7 @@ Compass.add_project_configuration 'compass/config.rb'
 #   because “*” matches zero or more characters.
 
 preprocess do
-  copy_components
+  optimize_rjs
 end
 
 compile '*' do

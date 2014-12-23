@@ -3,10 +3,8 @@ include Nanoc::Helpers::LinkTo
 include Nanoc::Helpers::Text
 include Nanoc::Helpers::Blogging
 
-# Copy Bower components as static assets outside of content instead of having
-# nanoc3 process them.
-def copy_components
-  FileUtils.cp_r 'components/.', 'output/components/' 
+def optimize_rjs
+  system 'node node_modules/.bin/r.js -o build.js include=requirejs'
 end
 
 # Enumerate items belonging to a menu identified by id.

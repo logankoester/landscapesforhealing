@@ -20,6 +20,7 @@ and the [Zurb Foundation](http://foundation.zurb.com/) front-end framework.
 $ git clone git@github.com:logankoester/leahutchins.git
 $ cd leahutchins
 $ bundle install
+$ npm install
 $ bower install
 $ nanoc compile
 $ nanoc view
@@ -76,6 +77,25 @@ You must use HTML, not Markdown syntax inside the panel content.
 ```bash
 $ bower update
 ```
+
+### Bower and RequireJS
+
+Frontend javascript is structured as AMD modules (bundled at compile-time),
+and external frontend packages are managed by [Bower](http://bower.io) under
+`components/`.
+
+A preprocess hook (`optimize_rjs`) on the nanoc compiler uses the
+[r.js](https://github.com/jrburke/r.js) optimizer to bundle all JavaScript
+into `output/js/app.bundle.js`, which is excluded from pruning and loaded
+by the default layout.
+
+A postinstall hook on Bower (see `.bowerrc`) changes updates the paths in
+`js/config.js` so that the optimizer can find the dependencies required by
+any internal javascript modules (put these under `js/` and load them from
+the main module, `js/app.js`).
+
+To add a package, just run `bower install <name>`, add it to the dependency
+array of the AMD definition where it is needed, and recompile.
 
 ## Testing
 
