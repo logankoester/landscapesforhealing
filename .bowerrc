@@ -3,6 +3,6 @@
   "analytics": false,
   "timeout": 120000,
   "scripts": {
-    "postinstall": "bower-requirejs -c js/config.js -t -b js/"
+    "postinstall": "node_modules/.bin/bower-requirejs -c js/config.js -t -b js/"
   }
 }
