@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= @config[:title] %> - <%= @item[:title] %></title>
+    <link rel="stylesheet" href="/stylesheets/app.css" />
+    <script src="/components/modernizr/modernizr.js"></script>
+    <link rel="alternate" type="application/atom+xml" title="<%= @config[:title] %>" href="/atom.xml">
+    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
+  </head>
+  <body>
+      <div id="site-header" class="row">
+        <div class="large-12 columns">
+          <div class="nav-bar right">
+           <ul class="button-group">
+             <% menu :top do |item| %>
+               <li><a href="<%= item.path %>" class="button"><%= item[:title] %></a></li>
+             <% end %>
+            </ul>
+          </div>
+          <a href="/"><h1><%= @config[:title] %></h1></a>
+          <hr/>
+        </div>
+      </div>
+     
+      <div id="site-body" class="row">
+        <div class="large-9 columns" role="content">
+          <article>
+            <h2>
+              <a href="<%= @item.path %>"><%= @item[:title] %></a>
+            </h2>
+            <%= yield %>
+            <% if @item[:kind] == 'article' %>
+              <span class="radius secondary label">Posted on <%= display_date @item[:created_at] %></span>
+            <% end %>
+          </article>
+        </div>
+     
+        <aside class="large-3 columns">
+          <div class="panel">
+            <h5>Further reading</h5>
+            <ul>
+              <% menu :articles do |item| %>
+                <li><a href="<%= item.path %>"><%= item[:title] %></a></li>
+              <% end %>
+            </ul>
+          </div>
+     
+          <% if content_for(@item, :panel) %>
+            <div class="panel">
+              <%= content_for(@item, :panel) %>
+            </div>
+          <% end %>
+
+          <% if @item[:kind] == 'article' %>
+            <div class="panel">
+              <p>Lea Hutchins is a licensed clinical mental health counselor, currently working in private practice in the seacoast region of New Hampshire.</p>
+              <%= link_to 'Introduction →', '/' %>
+            </div>
+          <% end %>
+
+        </aside>
+      </div>
+
+      <footer id="site-footer" class="row">
+        <div class="large-12 columns">
+          <hr/>
+          <div class="row">
+            <div class="large-6 columns">
+              <p><small>© 2007-<%= Time.now.year %> Lea Hutchins.</small></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="/components/jquery/dist/jquery.min.js"></script>
+    <script src="/components/foundation/js/foundation.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
