@@ -1,6 +1,5 @@
 requirejs.config({
   shim: {
-
   },
   paths: {
     foundation: "../components/foundation/js/foundation",

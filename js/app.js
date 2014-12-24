@@ -5,4 +5,4 @@ define([
   'foundation'
 ], function($, Modernizr, FastClick) {
   $(document).foundation()
-})
+});

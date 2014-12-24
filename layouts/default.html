@@ -10,57 +10,107 @@
   </head>
   <body>
       <div id="site-header" class="row">
-        <div class="large-12 columns">
-          <div class="nav-bar right">
-           <ul class="button-group">
-             <% menu :top do |item| %>
-               <li><a href="<%= item.path %>" class="button"><%= item[:title] %></a></li>
-             <% end %>
-            </ul>
-          </div>
+        <div class="small-8 columns small-centered">
           <a href="/"><h1><%= @config[:title] %></h1></a>
+          <div class="row">
+            <div class="medium-8 small-12 columns medium-centered small-centered">
+              <h4 class="subheader">Located in southern New Hampshire</h4>
+            </div>
+          </div>
           <hr/>
         </div>
       </div>
+
+      <div id="site-gallery" class="small-12 medium-6 columns small-centered medium-centered">
+        <ul class="small-block-grid-3">
+          <li><a href="/images/23.JPG" class="th"><img src="/images/23.JPG" /></a></li>
+          <li><a href="/images/21.JPG" class="th"><img src="/images/21.JPG" /></a></li>
+          <li><a href="/images/19.JPG" class="th"><img src="/images/19.JPG" /></a></li>
+        </ul>
+      </div>
      
       <div id="site-body" class="row">
-        <div class="large-9 columns">
+        <div class="large-12 columns">
           <article>
-            <h2>
+            <h4>
               <a href="<%= @item.path %>"><%= @item[:title] %></a>
-            </h2>
+            </h3>
             <%= yield %>
             <% if @item[:kind] == 'article' %>
               <span class="radius secondary label">Posted on <%= display_date @item[:created_at] %></span>
             <% end %>
           </article>
         </div>
-     
-        <aside class="large-3 columns">
-          <div class="panel">
-            <h5>Further reading</h5>
-            <ul>
-              <% menu :articles do |item| %>
-                <li><a href="<%= item.path %>"><%= item[:title] %></a></li>
-              <% end %>
-            </ul>
-          </div>
-     
-          <% if content_for(@item, :panel) %>
-            <div class="panel">
-              <%= content_for(@item, :panel) %>
-            </div>
-          <% end %>
-
-          <% if @item[:kind] == 'article' %>
-            <div class="panel">
-              <p>Lea Hutchins is a licensed clinical mental health counselor, currently working in private practice in the seacoast region of New Hampshire.</p>
-              <%= link_to 'Introduction →', '/' %>
-            </div>
-          <% end %>
-
-        </aside>
       </div>
+
+      <div id="site-features" class="large-6 medium-8 small-12 columns small-centered panel">
+        <div class="row" data-equalizer>
+          <ul class="medium-block-grid-3 small-block-grid-1">
+            <li>
+              <div data-equalizer-watch>
+                <h4>Memory gardens</h4>
+                <p>Memorial gardens to honor loved ones</p>
+              </div>
+            </li>
+
+            <li>
+              <div data-equalizer-watch>
+                <h4>Contemplative Gardens</h4>
+                <p>Spaces to promote reflection and meditation</p>
+              </div>
+            </li>
+
+            <li>
+              <div data-equalizer-watch>
+                <h4>Bird and Butterfly Gardens</h4>
+                <p>Gardens to commemorate connections with people, places and personal journeys</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="row" data-equalizer>
+          <ul class="medium-block-grid-3 small-block-grid-1">
+
+            <li>
+              <div>
+                <h4>Specific Needs Gardens</h4>
+                <p>Spaces designed for people with physical limitations</p>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <h4>Hospice Gardens</h4>
+                <p>Gardens to honor the end of life</p>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <h4>Gift Gardens</h4>
+                <p>Gardens for family, friends and institutions</p>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <hr />
+      
+      <div class="row">
+        <p>We will provide the energy and knowledge to give you the design for a garden
+        oriented to your specific needs. Rates will vary according to the needs and
+        goals of individual clients. We will aim to work with your available budget.
+        Contact <a href="http://leahutchins.com">Lea Hutchins</a> to schedule a
+        consultation or find out about the next workshop.</p>
+      </div>
+
+      <div class="row">
+        <div class="small-10 columns small-centered">
+          <h5 id="tagline">Envision... a special garden to unwind, rejuvinate, clear your thoughts. A place of peace and healing.</h5>
+        </div>
+      </div>
+
 
       <footer id="site-footer" class="row">
         <div class="large-12 columns">

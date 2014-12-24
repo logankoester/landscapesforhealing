@@ -43,4 +43,18 @@
 
 #site-header a h1 {
   font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+}
+
+#site-header h4.subheader {
+  text-align: center;
+}
+
+#site-features {
+  background: #d1e2b8;
+}
+
+body {
+  background-image: url('/images/halftone.png');
+  background-attachment: fixed;
 }
