@@ -1,28 +1,40 @@
 ---
-title: A brief introduction
-menu: top
+title: Healing gardens created with a collaborative therapeutic design
 ---
 
-Lea Hutchins began her work in the field of **psychotherapy** and **personal
-growth** in 1978. She opened her first practice in Seattle in 1983. She has a
-Masters degree in Psychology and has experience in outpatient mental health
-settings, residential treatment facilities, and in private practice. She is a
-licensed clinical mental health counselor, currently working in private
-practice in the seacoast region of New Hampshire.
+## Envision...
 
-Lea brings a **holistic orientation** to her work, which means that she
-focuses on the whole person; appreciating and working with all the inner
-resources each individual has, their **strengths and potentials** as well as
-those areas in which they may be experiencing difficulty.
+a special garden to unwind, rejuvinate, clear your thoughts… a place of
+peace and healing.
 
-This perspective enhances her ability to respect and work with each person
-based on their particular needs and goals, taking into account their total
-well-being. In addition to her psychotherapy training, Lea also has experience
-in **meditation**. In all her work, Lea conducts therapy with
-**confidentiality**, **respect**, and **appreciation** for each individual.
+## What is your vision?
 
-<% content_for :panel do %>
-  <h5>Counseling Services</h5>
-  <p>Counseling can offer refreshing insight, inspiration and joy as we resolve the difficulties that weigh us down.</p>
-  <%= link_to 'Learn more →', '/services/' %>
-<% end %>
+Landscapes For Healing brings you professionals with the experience and
+expertise to create a garden designed for your specific healing focus.
+
+For many of us it’s refreshing to step outdoors and take a deep breath,
+enjoying a moment of relaxation between the varied responsibilities of our
+day. Just as nature continually rejuvenates itself, it seems to offer a
+place in which we can heal and rejuvenate as well.
+
+A healing garden can offer a natural setting to support us in this process.
+Healing gardens can encourage mental, emotional and physical relaxation and
+stress-reduction. We can design a place to help you feel safe and refreshed,
+a haven and source for renewal.
+
+We will provide the energy and knowledge to give you the design for a garden
+oriented to your specific needs.
+
+## Who we are...
+
+Landscapes For Healing brings you the expertise of [Lea Hutchins](http://leahutchins.com),
+a licensed clinical mental health counselor with a Masters in Psychology,
+and other professionals including a landscape designer with a Masters in
+Landscape Architecture to provide you wtih the services you need to create
+a garden designed for your overall well-being and specific healing focus.
+
+Rates will vary according to the needs and goals of individual clients. We
+will aim to work with your available budget.
+
+Contact [Lea Hutchins](http://leahutchins.com) to schedule a consultation or
+find out about the next workshop.
