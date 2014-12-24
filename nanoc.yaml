@@ -73,7 +73,7 @@ checks:
     #   exclude: ['^/server_status']
     exclude: []
 
-title: 'Lea Hutchins'
+title: 'Landscapes For Healing'
 author_name: 'Lea Hutchins'
 author_uri: 'http://leahutchins.com'
-base_url: 'http://leahutchins.com'
+base_url: 'http://landscapesforhealing.com'

@@ -1,6 +1,6 @@
-# Lea Hutchins
+# Landscapes for Healing
 
-> The static site generator that runs [leahutchins.com](http://leahutchins.com)
+> The static site generator that runs [landscapesforhealing.com](http://landscapesforhealing.com)
 
 This website is powered by the [nanoc](http://nanoc.ws) static site generator
 and the [Zurb Foundation](http://foundation.zurb.com/) front-end framework.
@@ -17,8 +17,8 @@ and the [Zurb Foundation](http://foundation.zurb.com/) front-end framework.
 ### Quick start
 
 ```bash
-$ git clone git@github.com:logankoester/leahutchins.git
-$ cd leahutchins
+$ git clone git@github.com:logankoester/landscapesforhealing.git
+$ cd landscapesforhealing
 $ bundle install
 $ npm install
 $ bower install
@@ -43,7 +43,7 @@ The `title` attribute is required.
 ### Articles
 
 If your page should be an article (blog entry), set `kind: article` and
-`created_at: YYYY-MM-DD`. This will add it to the [Atom feed](http://leahutchins.com/atom.xml),
+`created_at: YYYY-MM-DD`. This will add it to the [Atom feed](http://landscapesforhealing.com/atom.xml),
 set an introductory sidebar panel, and display the `created_at` date on the page.
 
 You should also set `menu: articles`, so it appears in the menu.
@@ -105,11 +105,11 @@ $ bundle exec nanoc check --all
 
 ## Deployment
 
-Commit your changes and push them to [master](https://github.com/logankoester/leahutchins/tree/master).
+Commit your changes and push them to [master](https://github.com/logankoester/landscapesforhealing/tree/master).
 
-This will trigger a build at http://ci.ldk.io/logankoester/leahutchins/. If the
+This will trigger a build at http://ci.ldk.io/logankoester/landscapesforhealing/. If the
 `nanoc check --deploy` tests pass, the new build will be deployed to
-[leahutchins.com](http://leahutchins.com) for you.
+[landscapesforhealing.com](http://landscapesforhealing.com) for you.
 
 ## Environment
 
@@ -118,4 +118,4 @@ and the domain is registered through [Hover](https://www.hover.com/).
 
 ## License
 
-All content © 2007-2015 Lea Hutchins.
+All content © 2007-2015 Landscapes For Healing.
