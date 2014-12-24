@@ -23,9 +23,9 @@
 
       <div id="site-gallery" class="small-12 medium-6 columns small-centered medium-centered">
         <ul class="small-block-grid-3">
-          <li><a href="/images/23.JPG" class="th"><img src="/images/23.JPG" /></a></li>
-          <li><a href="/images/21.JPG" class="th"><img src="/images/21.JPG" /></a></li>
-          <li><a href="/images/19.JPG" class="th"><img src="/images/19.JPG" /></a></li>
+          <li><a href="/images/23.JPG" class="th"><img alt="Garden" src="/images/23.JPG" /></a></li>
+          <li><a href="/images/21.JPG" class="th"><img alt="Garden" src="/images/21.JPG" /></a></li>
+          <li><a href="/images/19.JPG" class="th"><img alt="Garden" src="/images/19.JPG" /></a></li>
         </ul>
       </div>
      
@@ -34,7 +34,7 @@
           <article>
             <h4>
               <a href="<%= @item.path %>"><%= @item[:title] %></a>
-            </h3>
+            </h4>
             <%= yield %>
             <% if @item[:kind] == 'article' %>
               <span class="radius secondary label">Posted on <%= display_date @item[:created_at] %></span>
@@ -91,8 +91,9 @@
                 <p>Gardens for family, friends and institutions</p>
               </div>
             </li>
-          </div>
-        </ul>
+
+          </ul>
+        </div>
       </div>
 
       <hr />
